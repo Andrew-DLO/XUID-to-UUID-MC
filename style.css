@@ -62,6 +62,11 @@ h3 {
     color: #333;
 }
 
+#commandgOutput {
+    font-weight: bold;
+    color: #333;
+}
+
 .github-button {
     position: fixed;
     bottom: 20px;
@@ -90,6 +95,25 @@ h3 {
 }
 
 #conversionOutput {
+    font-size: 16px;
+    color: #333;
+    word-break: break-word;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    cursor: text;
+}
+
+.command-output {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#commandOutput {
     font-size: 16px;
     color: #333;
     word-break: break-word;

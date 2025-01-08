@@ -13,8 +13,10 @@ window.addEventListener('DOMContentLoaded', () => {
         }
 
         const uuid = `00000000-0000-0000-${xuid.slice(4, 8)}-${xuid.slice(8)}`;
+        const command = `/fwhitelist add ${uuid}`
 
         document.getElementById("conversionOutput").textContent = uuid;
+        document.getElementById("commandOutput").textContent = command;
     }
 
     document.getElementById("copyButton").addEventListener("click", function () {
