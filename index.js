@@ -31,6 +31,12 @@ window.addEventListener('DOMContentLoaded', () => {
             console.error("Failed to copy: ", err);
             alert("Failed to copy the text.");
         });
+        this.textContent = 'Copied!'
+        this.style.background = 'green'
+        setTimeout(function (){
+            this.textContent = 'Copy'
+            this.style.background = '#007bff' 
+        }.bind(this), 2000); 
     });
 
     document.getElementById("copyCommandButton").addEventListener("click", function () {
@@ -45,6 +51,12 @@ window.addEventListener('DOMContentLoaded', () => {
             console.error("Failed to copy: ", err);
             alert("Failed to copy the text.");
         });
+        this.textContent = 'Copied!'
+        this.style.background = 'green'
+        setTimeout(function (){
+            this.textContent = 'Copy'
+            this.style.background = '#007bff' 
+        }.bind(this), 2000); 
     });
     
 });

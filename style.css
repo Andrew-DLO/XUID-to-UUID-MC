@@ -57,16 +57,6 @@ h3 {
     margin-top: 20px;
 }
 
-#conversionOutput {
-    font-weight: bold;
-    color: #333;
-}
-
-#commandOutput {
-    font-weight: bold;
-    color: #333;
-}
-
 .github-button {
     position: fixed;
     bottom: 20px;
@@ -104,6 +94,7 @@ h3 {
     flex-grow: 1;
     border: 1px solid #ccc;
     cursor: text;
+    font-weight: bold;
 }
 
 .command-output {
@@ -123,6 +114,7 @@ h3 {
     flex-grow: 1;
     border: 1px solid #ccc;
     cursor: text;
+    font-weight: bold;
 }
 
 .copy-button {
