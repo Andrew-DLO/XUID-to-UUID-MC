@@ -32,6 +32,20 @@ window.addEventListener('DOMContentLoaded', () => {
             alert("Failed to copy the text.");
         });
     });
+
+    document.getElementById("copyCommandButton").addEventListener("click", function () {
+        const output = document.getElementById("commandOutput").textContent;
+    
+        if (output.trim() === "" || output === "Your converted UUID will appear here.") {
+            return;
+        }
+    
+        navigator.clipboard.writeText(output).then(() => {
+        }).catch(err => {
+            console.error("Failed to copy: ", err);
+            alert("Failed to copy the text.");
+        });
+    });
     
 });
 
